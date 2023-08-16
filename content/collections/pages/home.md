@@ -1,8 +1,29 @@
 ---
-title: Home
 id: home
-template: home
 blueprint: pages
+title: Home
+template: home
+updated_by: bc462272-7f88-4540-aad9-666ef75c207b
+updated_at: 1692196279
+blocks:
+  -
+    id: ljj7lhk3
+    featured_post: c1c767f1-9097-4d7e-a3ae-78cce87cee82
+    type: featured_post
+    enabled: false
+    background_color: '#000000'
+  -
+    id: ljjwxa54
+    featured_posts:
+      - 92f664b5-bb83-4bb4-94c0-adc915db3ca0
+      - cbdca493-761c-4bd9-aa3d-0930f7cd9f3b
+      - 016eaae8-1ef2-406a-91a1-1f16770bd2a8
+      - c1c767f1-9097-4d7e-a3ae-78cce87cee82
+      - 2a3730dc-fd30-4ad3-9e50-99f89fe76e6f
+      - 663a022b-1c2f-4f2b-bbef-6f31d7051465
+    type: featured_posts
+    enabled: true
+show_title: false
 ---
 ## Welcome to your brand new Statamic site!
 

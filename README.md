@@ -1,1 +1,1 @@
-## Laravel Statamic CMS Blog
+##  Laravel Blog with Statamic cms

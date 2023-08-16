@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "2f0ecd39baf74ecc92807fb9ebfcd040",
+    "content-hash": "f4e6a0ddc9102378a0e41aa4bcd2f77d",
     "packages": [
         {
             "name": "ajthinking/archetype",
@@ -8572,6 +8572,33 @@
         }
     ],
     "packages-dev": [
+        {
+            "name": "afan417/blogo-starter-kit",
+            "version": "v1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/Afan417/blogo-starter-kit.git",
+                "reference": "acdbf696157de305fbe9142983610c861245ef0d"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/Afan417/blogo-starter-kit/zipball/acdbf696157de305fbe9142983610c861245ef0d",
+                "reference": "acdbf696157de305fbe9142983610c861245ef0d",
+                "shasum": ""
+            },
+            "type": "library",
+            "extra": {
+                "statamic": {
+                    "name": "Blogo Starter Kit",
+                    "description": "Blogo Starter Kit starter kit"
+                }
+            },
+            "support": {
+                "source": "https://github.com/Afan417/blogo-starter-kit/tree/v1.1",
+                "issues": "https://github.com/Afan417/blogo-starter-kit/issues"
+            },
+            "time": "2023-08-06T17:17:13+00:00"
+        },
         {
             "name": "barryvdh/laravel-debugbar",
             "version": "v3.8.2",

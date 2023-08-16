@@ -1,0 +1,45 @@
+title: Footer
+data:
+  copyright:
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Copyright © '
+        -
+          type: text
+          marks:
+            -
+              type: italic
+          text: '2023 - '
+        -
+          type: text
+          marks:
+            -
+              type: bold
+            -
+              type: italic
+          text: Tuantq
+        -
+          type: text
+          text: '. All rights reserved.'
+    -
+      type: paragraph
+      content:
+        -
+          type: text
+          text: 'Made by ❤️ '
+        -
+          type: text
+          marks:
+            -
+              type: link
+              attrs:
+                href: 'statamic://entry::home'
+                rel: null
+                target: null
+                title: null
+            -
+              type: bold
+          text: 'Tuantq '
