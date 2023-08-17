@@ -3,7 +3,7 @@ id: bd177cc0-23f9-40b2-a106-fa4b6aa4f37c
 blueprint: page
 title: Contact
 updated_by: bc462272-7f88-4540-aad9-666ef75c207b
-updated_at: 1692111297
+updated_at: 1692239350
 blocks:
   -
     id: ljhojgwl
@@ -18,7 +18,7 @@ blocks:
             marks:
               -
                 type: bold
-            text: 'Contact Tuan DEV'
+            text: 'Contact TuanTQ'
       -
         type: paragraph
         content:
