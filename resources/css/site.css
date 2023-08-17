@@ -41,7 +41,7 @@
     transition: background-size .5s ease-in-out, background-position .5s ease-in-out;
 }
 
-.nav-li:hover .nav-active-link {
+.nav-li:hover .nav-active-link, .nav-li-footer:hover .nav-active-link {
     background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #3b82f6);
     /* background-position: 100% 100%, 0 100%; */
     background-repeat: no-repeat;

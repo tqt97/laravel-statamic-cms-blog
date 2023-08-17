@@ -1,10 +1,9 @@
 ---
 id: 104870a0-11c3-4766-9fa7-00d59ecafe13
-published: false
 blueprint: page
 title: About
 updated_by: bc462272-7f88-4540-aad9-666ef75c207b
-updated_at: 1692239649
+updated_at: 1692239953
 blocks:
   -
     id: ljjycedd
