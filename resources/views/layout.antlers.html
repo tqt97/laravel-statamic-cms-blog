@@ -8,6 +8,7 @@
     <title>{{ settings:site_name ?: {title} }}</title>
     {{ partial:partials/seo }}
     {{ vite src="resources/js/site.js|resources/css/site.css" }}
+    {{ livewire:styles }}
 </head>
 
 <body class="flex flex-col min-h-screen font-inter" x-data="appData()" x-init="appInit()" @keydown.escape="reset">
@@ -17,17 +18,46 @@
     {{ template_content }}
 
     {{ partial:layout/footer }}
+
+    {{ livewire:scripts }}
 </body>
 <script>
     const appData = () => {
         return {
             percent: 0,
             modalOpen: false,
+            result: "",
+            selectedResultIndex: "",
             toggleSearch() {
                 this.modalOpen = !this.modalOpen
             },
             reset() {
                 this.modalOpen = false;
+            },
+            selectNextResult() {
+                if (this.selectedResultIndex === "") {
+                    this.selectedResultIndex = 0;
+                } else {
+                    this.selectedResultIndex++;
+                }
+                if (this.selectedResultIndex === this.filteredResults.length) {
+                    this.selectedResultIndex = 0;
+                }
+                this.focusSelectedResult();
+            },
+            selectPreviousResult() {
+                if (this.selectedResultIndex === "") {
+                    this.selectedResultIndex = this.filteredResults.length - 1;
+                } else {
+                    this.selectedResultIndex--;
+                }
+                if (this.selectedResultIndex < 0) {
+                    this.selectedResultIndex = this.filteredResults.length - 1;
+                }
+                this.focusSelectedResult();
+            },
+            focusSelectedResult() {
+                this.$refs.results.children[this.selectedResultIndex + 1].scrollIntoView({ block: 'nearest' })
             },
             appInit() {
                 window.addEventListener('scroll', () => {

@@ -33,8 +33,8 @@ return [
 
         'default' => [
             'driver' => 'local',
-            'searchables' => 'collection:posts',
-            'fields' => ['title'],
+            'searchables' => ['collection:posts', 'taxonomy:categories'],
+            'fields' => ['title', 'icon'],
         ],
 
     ],
