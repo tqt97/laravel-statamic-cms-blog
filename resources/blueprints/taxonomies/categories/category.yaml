@@ -23,4 +23,15 @@ tabs:
               required: true
               validate:
                 - required
+          -
+            handle: icon
+            field:
+              default: pages
+              type: icon
+              display: Icon
+              icon: icon_picker
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
 title: Category

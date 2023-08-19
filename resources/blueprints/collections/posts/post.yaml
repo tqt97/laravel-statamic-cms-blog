@@ -80,4 +80,15 @@ tabs:
               default: now
               validate:
                 - required
+          -
+            handle: icon
+            field:
+              default: suggest
+              type: icon
+              display: Icon
+              icon: icon_picker
+              listable: hidden
+              instructions_position: above
+              visibility: visible
+              hide_display: false
 title: Post
