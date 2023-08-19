@@ -51,3 +51,19 @@
     background-position: 100% 100%, 0 100%;
     background-size: 0 3px, 100% 3px;
 }
+
+.button--secondary {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 0.5rem;
+    border-top-width: 1px;
+    border-bottom-width: 1px;
+    /* --tw-border-opacity: 0.5; */
+    /* border-top-color: rgb(100 116 139 / var(--tw-border-opacity)); */
+    border-bottom-color: transparent;
+    padding: 0.5rem 1rem;
+    text-align: center;
+    font-weight: 500;
+
+}
