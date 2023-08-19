@@ -1,5 +1,7 @@
-<div class="container py-8 md:py-12">
-    {{ partial:components/heading size="h2" label="Results for: '{get:q}'" center="true" }}
+<div class="container mx-auto max-w-5xl py-8 md:py-12">
+    <div class="max-w-3xl mx-auto">
+        {{ partial:components/heading size="h2" label="Results for: '{get:q}'" center="true" }}
+    </div>
     {{ search:results as="results" }}
     {{ if results }}
     <ul class="grid gap-12 mt-8 md:grid-cols-2 lg:grid-cols-3 md:mt-12">

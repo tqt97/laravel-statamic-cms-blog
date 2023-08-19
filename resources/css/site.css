@@ -41,7 +41,8 @@
     transition: background-size .5s ease-in-out, background-position .5s ease-in-out;
 }
 
-.nav-li:hover .nav-active-link, .nav-li-footer:hover .nav-active-link {
+.nav-li:hover .nav-active-link,
+.nav-li-footer:hover .nav-active-link {
     background-image: linear-gradient(transparent, transparent), linear-gradient(#fff, #3b82f6);
     /* background-position: 100% 100%, 0 100%; */
     background-repeat: no-repeat;
@@ -50,6 +51,10 @@
     transition: background-size .5s ease-in-out, background-position .5s ease-in-out;
     background-position: 100% 100%, 0 100%;
     background-size: 0 3px, 100% 3px;
+}
+
+.active-link {
+    color: #3b82f6;
 }
 
 .button--secondary {

@@ -12,6 +12,10 @@ darkgray: 'text-gray-800'
 ---
 
 <{{ size or 'h2' }}
-    class="font-bold {{ center ?= 'text-center' }} {{ color ? view:colors[color] : view:colors['darkgray'] }} {{ size ? view:sizes[size] : view:sizes['h2'] }} {{ class }}">
-    {{ label }}
+    class="flex flex-row flex-nowrap items-center my-2 font-bold {{ center ?= 'text-center' }} {{ color ? view:colors[color] : view:colors['darkgray'] }} {{ size ? view:sizes[size] : view:sizes['h2'] }} {{ class }}">
+    <span class="flex-grow block border-t border-black" aria-hidden="true" role="presentation"></span>
+    <span class="flex-none block mx-4 px-4 py-2.5 text-base leading-none font-medium  bg-gradient-to-r from-gray-600 to-gray-900 rounded text-white">
+        {{ label }}
+    </span>
+    <span class="flex-grow block border-t border-black" aria-hidden="true" role="presentation"></span>
 </{{ size or 'h2' }}>
