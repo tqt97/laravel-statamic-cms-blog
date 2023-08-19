@@ -24,7 +24,7 @@
 
                 @forelse($results as $result)
                     <a href="{{ $result['url'] }}"
-                        class="block1 flex items-center font-medium text-gray-700 px-4 py-2 transition border-b hover:text-blue-500 hover:bg-gray-10 focus:bg-gray-100 cursor-pointer  hover:translate-x-1 duration-250">
+                        class="block1 flex items-center font-medium text-gray-700 px-4 py-2 transition border-b hover:text-blue-500 hover:bg-gray-10 focus:bg-gray-100 cursor-pointer  hover:bg-blue-50 hover:shadow-sm duration-250">
                         <span class="w-4 h-4 mr-2 hover:fill-gray-50">
                             {!! $result['icon'] !!}
                         </span>
