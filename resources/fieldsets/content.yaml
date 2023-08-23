@@ -79,3 +79,11 @@ fields:
                     validate:
                       - required
                     max_files: 1
+            code_block:
+              display: 'Code Block'
+              instructions: null
+              icon: programming-script-code-brackets
+              fields:
+                -
+                  import: code_block
+      word_count: false
