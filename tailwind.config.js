@@ -5,7 +5,9 @@ module.exports = {
         "./resources/**/*.blade.php",
         "./resources/**/*.vue",
         "./content/**/*.md",
+        "./node_modules/flowbite/**/*.js"
     ],
+    darkMode: 'class',
     theme: {
         container: {
             center: true,
@@ -23,5 +25,8 @@ module.exports = {
             },
         },
     },
-    plugins: [require("@tailwindcss/typography")],
+    plugins: [
+        require("@tailwindcss/typography"),
+        require('flowbite/plugin')
+    ],
 };
