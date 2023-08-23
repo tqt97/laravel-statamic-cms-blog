@@ -1,9 +1,9 @@
 {{ collection:posts as="posts" sort="random" limit="3" :id:not="id" }}
     {{ if posts }}
-        <div class="">
-            <div class="container max-w-5xl py-8 md:py-12">
-                {{ partial:components/heading size="h3" label="Similiar Posts" class="mb-8 md:mb-12" }}
-                <div class="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
+        <div class="bg-white dark:bg-gray-800">
+            <div class="container py-8 md:py-12">
+                {{ partial:components/heading size="h3" label="Similiar Posts" class="mb-8 md:mb-12 mx-auto" }}
+                <div class="grid gap-12 md:grid-cols-2 lg:grid-cols-3">
                     {{ posts }}
                         {{ partial:components/post_card }}
                     {{ /posts }}

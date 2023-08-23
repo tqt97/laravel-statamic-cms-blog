@@ -5,17 +5,17 @@ sizes:
     h4: 'text-xl md:text-2xl lg:text-3xl'
     h5: 'text-lg md:text-xl lg:text-2xl'
 colors:
-black: 'text-black'
-white: 'text-white'
-lightgray: 'text-gray-100'
-darkgray: 'text-gray-800'
+    black: 'text-black'
+    white: 'text-white'
+    lightgray: 'text-gray-100'
+    darkgray: 'text-gray-800'
 ---
 
-<{{ size or 'h2' }}
-    class="flex flex-row flex-nowrap items-center my-2 font-bold {{ center ?= 'text-center' }} {{ color ? view:colors[color] : view:colors['darkgray'] }} {{ size ? view:sizes[size] : view:sizes['h2'] }} {{ class }}">
-    <span class="flex-grow block border-t border-black" aria-hidden="true" role="presentation"></span>
-    <span class="flex-none block mx-4 px-4 py-2.5 text-base leading-none font-medium  bg-gradient-to-r from-gray-600 to-gray-900 rounded text-white">
-        {{ label }}
+<{{ size or 'h2' }} class="flex flex-row flex-nowrap items-center font-bold dark:text-white text-gray-800 {{ center ?= 'text-center' }} {{ color ? view:colors[color] : view:colors['darkgray'] }} {{ size ? view:sizes[size] : view:sizes['h2'] }} {{ class }}">
+    <span class="flex-grow block border-t border-black dark:border-white" aria-hidden="true" role="presentation"></span>
+    <span class="flex-none block mx-4 px-4 py-2.5 text-base rounded leading-none font-medium bg-black text-white dark:bg-white dark:text-black">
+    {{ label }}
     </span>
-    <span class="flex-grow block border-t border-black" aria-hidden="true" role="presentation"></span>
+    <span class="flex-grow block border-t border-black dark:border-white" aria-hidden="true" role="presentation"></span>
+
 </{{ size or 'h2' }}>

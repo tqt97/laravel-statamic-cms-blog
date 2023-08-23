@@ -12,20 +12,26 @@
         </div>
         <input wire:model.debounce.250ms="q" id="search" name="search" x-ref="inputSearch"
             x-on:keyup.down="selectNextResult" x-on:keyup.up="selectPreviousResult"
-            class="block w-full px-3 py-2 mt-2 text-gray-600 border placeholder-gray-400 bg-white border-gray-400 rounded-md focus:border-blue-200 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-40  pl-10 pr-3 text-sm focus:text-gray-800 sm:text-sm"
+            class="block w-full px-3 py-2 mt-2 text-gray-800 border placeholder-gray-400 bg-white border-gray-400
+            rounded-md focus:border-blue-200 focus:outline-none focus:ring focus:ring-blue-200 focus:ring-opacity-40
+            pl-10 pr-3 text-sm focus:text-gray-800 sm:text-sm"
             placeholder="Search here ..." type="search">
 
     </div>
 
     @if ($q)
         <div
-            class="origin-top-right lg:overflow-auto scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar:bg-transparent1 scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 scrollbar-track:!rounded max-h-96 lg:supports-scrollbars:pr-2 lg:max-h-96 right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
+            class="origin-top-right lg:overflow-auto scrollbar:!w-1.5 scrollbar:!h-1.5 scrollbar:bg-transparent1
+            scrollbar-track:!bg-slate-100 scrollbar-thumb:!rounded scrollbar-thumb:!bg-slate-300 scrollbar-track:!rounded
+            max-h-96 lg:supports-scrollbars:pr-2 lg:max-h-96 right-0 mt-2 w-full rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5">
             <div class="text-sm text-gray-800">
 
                 @forelse($results as $result)
                     <a href="{{ $result['url'] }}"
-                        class="block1 flex items-center font-medium text-gray-700 px-4 py-2 transition border-b hover:text-blue-500 hover:bg-gray-10 focus:bg-gray-100 cursor-pointer  hover:bg-blue-50 hover:shadow-sm duration-250">
-                        <span class="w-4 h-4 mr-2 hover:fill-gray-50">
+                        class="block1 flex items-center font-medium text-gray-700 px-4 py-2 transition border-b
+                        hover:text-blue-500 bg-yellow-500 dark:hover:bg-gray-50 dark:hover:text-blue-500
+                        focus:bg-gray-500 cursor-pointer hover:bg-gray-500 hover:shadow-sm duration-250">
+                        <span class="w-4 h-4 mr-2 hover:fill-white">
                             {!! $result['icon'] !!}
                         </span>
                         {{ $result['title'] }}
