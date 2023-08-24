@@ -108,3 +108,7 @@ pre code.torchlight .line-number,
 pre code.torchlight .summary-caret {
     @apply mr-4;
 }
+
+.content-code>pre {
+    box-shadow: 0px 0px 0px 1px rgba(204, 204, 204, 0.377);
+}

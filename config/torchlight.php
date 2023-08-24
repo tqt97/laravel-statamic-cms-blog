@@ -62,5 +62,6 @@ return [
         // When lines are collapsed, this is the text that will
         // be shown to indicate that they can be expanded.
         // 'summaryCollapsedIndicator' => '...',
+        'copyable' => true,
     ]
 ];
